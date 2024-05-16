@@ -40,8 +40,8 @@ class DatasetMS(InternalData):
             image_list_json = ['data_info.json']
         assert os.path.isabs(root), 'root must be a absolute path'
         self.root = root
-        self.img_dir_name = 'InternalImgs'        # need to change to according to your data structure
-        self.json_dir_name = 'InternalData'        # need to change to according to your data structure
+        self.img_dir_name = 'images'        # need to change to according to your data structure
+        self.json_dir_name = 'data_info'        # need to change to according to your data structure
         self.transform = transform
         self.load_vae_feat = load_vae_feat
         self.resolution = resolution
